@@ -21,7 +21,8 @@
         <build.profile.id>dev</build.profile.id>
         <jacoco.it.execution.data.file>${project.build.directory}/coverage-reports/jacoco-it.exec</jacoco.it.execution.data.file>
         <jacoco.ut.execution.data.file>${project.build.directory}/coverage-reports/jacoco-ut.exec</jacoco.ut.execution.data.file>
-        <jdk.version>1.7</jdk.version>
+        <!--<jdk.version>1.7</jdk.version>-->
+        <jdk.version>8</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Only unit tests are run by default. -->
         <skip.integration.tests>true</skip.integration.tests>
@@ -110,7 +111,8 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.5.201505241946</version>
+                <!--<version>0.7.5.201505241946</version>-->
+                <version>0.8.12</version>
                 <executions>
                     <!--
                         Prepares the property pointing to the JaCoCo runtime agent which
